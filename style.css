@@ -1,0 +1,1527 @@
+/* STYLE GENERAL DE LA PAGE */
+
+
+
+
+
+
+/* Adaptation de la page pour firefox */ 
+
+body { 
+	margin: 0 0;
+	padding: 0 0;
+}
+
+/* Annulation des effets intégrés des navigateurs */ 
+
+a:link { 
+    text-decoration: none; 
+} 
+
+a:visited { 
+    text-decoration: none; 
+} 
+
+/* Couleur de tous les paragraphes */
+
+p {
+  color: #595959;
+}
+
+/* Animations */
+
+@-webkit-keyframes slider {
+  from {left: 0%; }
+  to {left: -200%; }
+  0% {left: 0% }
+  30% {left: 0% }
+  45% {left: -100%; }
+  85% {left: -100%; }
+  100% {left: -200%; }
+}
+
+@-o-keyframes slider {
+  from {left: 0%; }
+  to {left: -200%; }
+  0% {left: 0% }
+  30% {left: 0% }
+  45% {left: -100%; }
+  85% {left: -100%; }
+  100% {left: -200%; }
+}
+
+@-moz-keyframes slider {
+  from {left: 0%; }
+  to {left: -200%; }
+  0% {left: 0% }
+  30% {left: 0% }
+  45% {left: -100%; }
+  85% {left: -100%; }
+  100% {left: -200%; }
+}
+
+@keyframes slider {
+  from {left: 0%; }
+  to {left: -200%; }
+  0% {left: 0% }
+  30% {left: 0% }
+  45% {left: -100%; }
+  85% {left: -100%; }
+  100% {left: -200%; }
+}
+
+@-webkit-keyframes timeliner {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+@-o-keyframes timeliner {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+@-moz-keyframes timeliner {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+@keyframes timeliner {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+@-webkit-keyframes hoverGauche {
+  from { left: 0; }
+  to { left: 5px; }
+}
+
+@-o-keyframes hoverGauche {
+  from { left: 0; }
+  to { left: 5px; }
+}
+
+@-moz-keyframes hoverGauche {
+  from { left: 0; }
+  to { left: 5px; }
+}
+
+@keyframes hoverGauche {
+  from { left: 0; }
+  to { left: 5px; }
+}
+
+@-webkit-keyframes hoverDroite {
+  from { right: 0; }
+  to { right: 5px; }
+}
+
+@-o-keyframes hoverDroite {
+  from { right: 0; }
+  to { right: 5px; }
+}
+
+@-moz-keyframes hoverDroite {
+  from { right: 0; }
+  to { right: 5px; }
+}
+
+@keyframes hoverDroite {
+  from { right: 0; }
+  to { right: 5px; }
+}
+
+/* Style et taille des polices d'écriture */ 
+
+body {
+    font-family: "Roboto", sans-serif; 
+}
+
+#header h1 {
+  font-size: 2.5em;  
+  text-transform: uppercase;
+}
+
+#header h2  {
+  font-weight: 500;  
+  font-size: 1em;
+}
+
+header a {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+section h2 {
+  font-size: 3em; 
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 1em; 
+  line-height: 25px; 
+  font-weight: 500; 
+}
+
+footer p {
+  font-size: 0.8em; 
+}
+
+fieldset h2 {
+  font-size: 1.6em; 
+}
+
+fieldset em {
+  font-style: inherit;
+  font-weight: 600; 
+}
+
+fieldset p {
+  font-size: 1em;
+}
+
+#envoyer {
+  font-size: 1em;
+}
+
+input, textarea {
+    font-family: "Roboto", sans-serif;
+}
+
+.services h3 {
+  font-size: 1.1em; 
+}
+
+.projets h3 {
+  font-size: 1.3em; 
+}
+
+
+
+
+
+/* STYLE DES DIFFERENTES PARTIES DE LA PAGE */ 
+
+
+
+
+
+/* Menu fixe */
+
+.navigation { 
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  height: 110px;  
+  position: fixed;
+  z-index: 99; 
+  overflow: hidden; 
+  background-color: white; 
+}
+
+.navigation a, .navigation a:link,.navigation a:visited  {
+	color: #A3A3A3;  
+}
+
+.navigation a:hover {
+  color: black; 
+}
+
+#liensPage {
+  margin-right: 15%; 
+  width: 380px;  
+	display: flex; 
+  text-align: center;
+}
+
+#liensPage span {   
+  padding-top: 13%;  
+  width: 100px; 
+  height: 100%; 
+}
+
+#liensPage span:hover {
+  border-top: 4px solid #5cadd3;  
+}
+
+#logo {
+  margin-left: 13%; 
+  align-self: center; 
+}
+
+/* En-tête */
+
+#header {
+  display: flex;
+  justify-content: center; 
+  padding-bottom: 30px; 
+  position: relative;
+}
+
+#texteSlider {
+  position: absolute;
+  left: 12%; 
+  top: 35%;
+  height: 250px;
+  width: 80%; 
+}
+
+#header h1 {
+  position: absolute;
+  color: white; 
+  top: 0;
+}
+
+#header strong {
+  color: #5cadd3;
+}
+
+#header h2 {
+  position: absolute;
+  top: 55%;
+  color: white; 
+}
+
+#info {
+  position: absolute;
+  bottom: 0; 
+  padding: 12px 20px 12px 20px; 
+  border-radius: 4px; 
+  border-bottom: 3px solid #318bb4;
+  background-color: #5cadd3;
+  color: white; 
+}
+
+#info:hover {
+  padding: 14px 22px 14px 22px ;
+}
+
+/* Slider de l'en-tête */ 
+
+#slider {
+  position: relative;
+  width: 100%; 
+  height: auto; 
+  margin-top: 90px; 
+  overflow: hidden;  
+}
+
+#slider figure {
+  position: relative;
+  width: 300%; 
+  height: 100%;  
+  text-align: left;
+
+  -webkit-animation: slider 17s infinite; 
+  -moz-animation: slider 17s infinite;
+  -o-animation: slider 17s infinite;
+  animation: slider 17s infinite;
+}
+
+#slider figure img {
+  width: 33.33%; 
+  height: 100%;  
+  float: left;
+}
+
+#timeline {
+  position: absolute;
+  bottom: 0;  
+  height: 6px;
+  left: 0; 
+  background: #5cadd3;
+  width: 100%;
+  z-index: 3; 
+
+  -webkit-animation: timeliner 17s infinite linear;
+  -o-animation: timeliner 17s infinite linear;
+  -moz-animation: timeliner 17s infinite linear;
+  animation: timeliner 17s infinite linear;
+}
+
+#fondTimeline {
+  position: absolute;
+  bottom: 0; 
+  height: 6px;
+  left: 0; 
+  background: rgb(0, 0, 0, 0.3);
+  width: 100%;
+  z-index: 2; 
+}
+
+#flecheGaucheContainer {
+  position: absolute;
+  top: 50%;
+  width: 20%; 
+  height: 50%; 
+  display: flex; 
+  justify-content: center; 
+  transition: left 3s;  
+}
+
+#flecheGauche {
+  position: absolute;
+  left: 7px;
+  top: 0; 
+  color: white;
+  font-size: 18px;
+  z-index: 3; 
+}
+
+#cercleGauche {
+  position: absolute;
+  left: -30px;
+  top: -20px; 
+  color: black;
+  opacity: 0.3;
+  font-size: 60px; 
+  z-index: 2; 
+}
+
+#flecheDroiteContainer {
+  position: absolute;
+  top: 50%;
+  right: 0; 
+  width: 20%; 
+  height: 50%; 
+  display: flex; 
+  justify-content: center; 
+}
+
+#flecheDroite {
+  position: absolute;
+  right: 7px;
+  top: 0; 
+  color: white;
+  font-size: 18px;
+  z-index: 3; 
+}
+
+#cercleDroit {
+  position: absolute;
+  right: -30px;
+  top: -20px; 
+  color: black;
+  opacity: 0.3;
+  font-size: 60px;  
+  z-index: 2; 
+}
+
+#back {
+  position: absolute; 
+  z-index: 4;
+  left: -6%; 
+  bottom: 39%; 
+  width: 13%;
+  height: 13%;
+  opacity: 0; 
+}
+
+#next {
+  position: absolute; 
+  z-index: 4;
+  right: -6%; 
+  bottom: 39%; 
+  width: 13%;
+  height: 13%;
+  opacity: 0; 
+}
+
+#back:hover ~ #flecheGaucheContainer {
+  -webkit-animation: hoverGauche 1s infinite linear;
+  -o-animation: hoverGauche 1s infinite linear;
+  -moz-animation: hoverGauche 1s infinite linear;
+  animation: hoverGauche 1s infinite linear;
+}
+
+#next:hover ~ #flecheDroiteContainer {
+  -webkit-animation: hoverDroite 1s infinite linear;
+  -o-animation: hoverDroite 1s infinite linear;
+  -moz-animation: hoverDroite 1s infinite linear;
+  animation: hoverDroite 1s infinite linear;
+}
+
+#back:checked ~ figure {
+  animation: none;
+  left: 0; 
+}
+
+#next:checked ~ figure {
+  animation: none;
+  left: -100%; 
+}
+
+.prochaineImage:checked ~ #timeline {
+  display: none; 
+}
+
+/* Style commun des en-têtes des sections services et projets */
+
+.hautSection {  
+  text-align: center;  
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+}
+
+section h2 {
+  margin: 0 0;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  color: black;
+  position: initial;
+  width: 100%;
+}
+
+.hautSection p {
+  padding-left: 30%; 
+  padding-right: 30%; 
+}
+
+/* Style des icônes des en-têtes des sections services et projets */
+
+.separationContainer {
+  position: relative;
+  width: 180px; 
+  height: 20px;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.separationCercle {
+  position: absolute;
+  border-radius: 50%;
+  background: #5cadd3;
+  border: 4px solid white;
+  width: 16px;
+  height: 16px; 
+  left: 82px; 
+  bottom: 0;
+  z-index: 2;
+}
+
+.separationLigne {
+  position: absolute;
+  background-color: #d9d9d9; 
+  width: 100%; 
+  height: 1px;
+  border-radius: 50%; 
+  left: 0;
+  bottom: 60%; 
+}
+
+/* Section services */
+
+.sectionServicesContainer { 
+	display: flex; 
+  justify-content: space-between;
+  margin-bottom: 10px; 
+}
+
+#droiteServices {
+	align-self: center; 
+  margin-top: 3%;  
+  margin-left: 5%;
+  padding-right: 10%;    
+}
+
+#droiteServices article {
+  display: flex;  
+}
+
+#droiteServices h3 {
+  color: black;
+}
+
+.texteService {
+  width: 70%;
+  margin-left: 20px; 
+}
+
+#illustration {
+  position: relative; 
+  width: 100%; 
+}
+
+#illustration img {
+  position: absolute;
+  right: 0; 
+  max-width: 100%;  
+}
+
+/* Style des icônes de la section services */
+
+.iconeServicesContainer {
+  position: relative; 
+  width: 100px; 
+  height: 100px;
+} 
+
+.ligneServices {
+  position: absolute; 
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  width: 68px; 
+  height: 68px; 
+  border-radius: 50%; 
+  left: 12px; 
+  bottom: 16px;
+}
+
+.cercleServices {
+  position: absolute;
+  border-radius: 50%;
+  background: #5cadd3;
+  border: 4px solid white;
+  width: 14px;
+  height: 14px; 
+  z-index: 2;
+  bottom: 40px;
+  left: 70px;  
+}
+
+.iconeServicesContainer i {
+  position: absolute;
+  color: #5cadd3; 
+  font-size: 27px;
+  top: 35px;
+  left: 35px; 
+}
+
+/* Section projet */ 
+
+.projets {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.imagesProjetsContainer {
+  position: relative;
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+  width: 100%;
+  max-width: 1400px; 
+  padding-top: 0; 
+  display: flex; 
+}
+
+#boutonsProjets { 
+  display: flex;
+  justify-content: center;
+}
+
+#allWorks {
+  background-color: #5cadd3;
+  color: white; 
+  border-bottom: 4px solid #318bb4;
+  border-radius: 3px 0 0 3px; 
+}
+
+#boutonsProjets .pure-button {
+  position: relative; 
+  margin-bottom: 80px;
+  margin-top: 40px;
+  padding: 10px 10px 10px 10px; 
+  position: relative;
+  background-color: #e6e6e6;
+  box-shadow: inherit; 
+  color: grey; 
+}
+
+.pure-button i {
+  position: absolute;
+  left: 39%;
+  bottom: -16px; 
+  font-size: 200%; 
+  color: #318bb4;
+}
+
+#boutonsProjets i {
+  opacity: 0; 
+}
+
+#visible {
+  opacity: 1 !important;
+}
+
+#creative, #corporate {
+  border-radius: 0; 
+}
+
+#portfolio {
+  border-radius: 0 3px 3px 0; 
+}
+
+#boutonsProjets a {
+  background-color: #e6e6e6;
+  box-shadow: inherit; 
+  color: grey; 
+}
+
+#boutonsProjets a:hover {
+  background-color: #5cadd3;
+  color: white;
+  border-bottom: 4px solid #318bb4;
+}
+
+#boutonsProjets a:hover i {
+  opacity: 1; 
+}
+
+#boutonsProjets #allWorks {
+  background-color: #5cadd3;
+  color: white;
+}
+
+figure {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+/* Mise en place des images du projet et de l'effet au passage de la souris */ 
+
+.imagesProjets {
+  width: 300px; 
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+.imagesProjets .art {
+  position: absolute; 
+  width: 300px;
+  height: 200px;
+} 
+
+.invisible {
+  width: 100%;
+  height: 100%;
+  position: relative; 
+  display: flex; 
+  opacity: 0;
+}
+
+.invisible:hover {
+  transition: opacity 2s; 
+  opacity: 1; 
+}
+
+.fondGris {
+  width: 100%;
+  height: 35%;
+  background-color: black; 
+  opacity: 0.5; 
+  align-self: flex-end;
+}
+
+.texteImagesProjets {
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  left: 20px;
+  z-index: 2; 
+}
+
+.texteImagesProjets p, .texteImagesProjets h3 {
+  color: white;
+  margin: 0 0 5px 0;
+}
+
+/* Style des icônes de la section projets */ 
+
+.iconeProjetsContainer {
+  position: absolute; 
+  width: 44px; 
+  height: 44px; 
+  right: 10px;
+  bottom: 34px;
+}
+
+.cercleProjets {
+  position: absolute;
+  width: 40px; 
+  height: 40px; 
+  background-color: #5cadd3; 
+  border-radius: 50%;
+  border: 2px solid white; 
+  left: 0;
+  bottom: 32%; 
+}
+
+.imagesProjets i {
+  position: absolute;
+  left: 30%; 
+  color: white;  
+  font-size: 16px; 
+  width: 100%; 
+}
+
+/* Section contacts */ 
+
+footer {
+  background-color: rgb(0, 107, 179, 0.8); 
+  position: relative;
+}
+
+iframe {
+  width: 100%; 
+  height: 800px;
+  opacity: 0.7;
+  border: 0;
+}
+
+fieldset { 
+  position: absolute;
+  height: 75%; 
+  top: 10%; 
+  right: 15%; 
+  width: 380px;
+  padding-left: 35px;
+  padding-top: 0; 
+	border: none; 
+	background-color: rgb(255, 255, 255, 0.7)
+}
+
+fieldset h2 {
+  margin-top: 17px;
+  text-align: initial;
+}
+
+input, textarea {
+ 	padding: 10px;
+ 	border: 1px solid #d9d9d9;
+ 	border-radius: 5px;
+ 	width: 90%;
+  margin-bottom: 12px; 
+}
+
+textarea {
+  padding-bottom: 170px; 
+}
+
+#envoyer {
+	width: 120px;
+	box-shadow: none; 
+  margin: 0; 
+  padding: 8px 0 8px 0; 
+  text-align: center; 
+  border-radius: 4px; 
+  border-bottom: 3px solid #318bb4;
+  background-color: #5cadd3;
+  color: white; 
+}
+
+#envoyer:hover {
+  padding: 10px 10px;
+  width: 130px;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+
+
+
+/* Style pour écran moyen */
+
+@media screen and (max-width: 1366px) {
+
+  /* Ajustement de l'en-tête */
+
+  #header h1 {
+    font-size: 2em; 
+  }
+
+  #texteSlider {
+    left: 8%; 
+    top: 35%;
+    height: 200px;
+  }
+
+  #header h2 {
+  top: 50%;
+  }
+
+  /* Ajustement des images du projet et de leur contenu */ 
+
+  .imagesProjetsContainer {
+    max-width: 1024px; 
+  }
+
+  .imagesProjets {
+    width: 240px; 
+    height: 160px;
+  }
+
+  .imagesProjets .art {
+    position: absolute; 
+    width: 240px;
+    height: 160px;
+  } 
+
+  .texteImagesProjets {
+    bottom: 7px;
+  }
+
+  .iconeProjetsContainer {
+    bottom: 21px;
+  }
+
+}
+
+/* Style pour tablettes */
+
+@media screen and (max-width: 1024px) {
+
+  /* adaptation pour appareils mobiles */
+
+  body {
+    width: auto;  
+    margin: auto;  
+  }
+
+  .navigation a:hover {
+    color: #A3A3A3; 
+  }
+
+  #liensPage span:hover {
+  border-top: none;  
+ }
+
+  /* Adaptation des tailles des polices d'écritures */
+
+  #header h1 {
+   font-size: 1.8em;  
+  }
+
+  #header h2 { 
+    font-size: 1em;
+  }
+
+  #header a {
+    font-size: 1em; 
+  }
+
+  nav a {
+    font-size: 1.2em;
+  }
+
+  section h2 {
+    font-size: 2.3em; 
+  }
+
+  .services p, .hautSection p {
+    font-size: 1.2em; 
+    line-height: 20px; 
+  }
+
+  section a {
+    font-size: 1.4em; 
+  }
+
+  footer p {
+    font-size: 1.2em; 
+  }
+
+  fieldset h1 {
+    font-size: 1.8em; 
+  }
+
+  fieldset em {
+    font-weight: 600; 
+  }
+
+  fieldset p {
+    font-size:1.2em;
+  }
+
+  .services h3 {
+    font-size: 1.3em; 
+  }
+
+  .texteImagesProjets p {
+    font-size: 1em; 
+  }
+
+  .texteImagesProjets h3 {
+    font-size: 1.2em; 
+  }
+
+  footer input, footer textarea {
+    font-size: 1.2em; 
+  }
+
+  footer #envoyer {
+    font-size: 1.2em;
+  }
+
+  /* Ajustement menu fixe */
+
+  #liensPage {
+    margin-right: 0; 
+    width: 100%;  
+    display: flex; 
+    text-align: center; 
+    justify-content: flex-end;
+    margin-right: 10%;
+  }
+
+  #liensPage span {
+    margin-top: 5px;   
+    padding-top: 38px;  
+    width: 18%; 
+  }
+
+  #logo {
+    margin-left: 5%; 
+  }
+
+  #logo img {
+    align-self: center;
+  }
+
+  /* Ajustement de l'en-tête de la page */
+
+  #texteSlider {
+    left: 5%; 
+    top: 35%;
+    height: 220px;
+  }
+
+  #info {
+    padding: 5px 5px 5px 5px; 
+  }
+
+  #texteSlider {
+    height: 200px;
+  }
+
+  /* Ajustement des en-têtes des sections services et projets */
+
+  .hautSection p {
+    padding-left: 10%; 
+    padding-right: 10%; 
+  }
+
+  /* Ajustement de la section services */
+
+  .texteService strong {
+    line-height: 50px;  
+  }
+
+  .iconeServicesContainer {
+    margin-top: 70px; 
+  }
+
+  #droiteServices {
+    padding-right: 3%;    
+  }
+
+  #illustration img {
+    max-width: 130%; 
+    padding-top: 45px;
+    left: -8%;  
+  }
+
+  /* Ajustement des boutons du projet */ 
+
+  .pure-button i {
+    bottom: -21px; 
+  }
+
+  #boutonsProjets a {
+    width: 100px;
+  }
+
+  /* Ajustement des images du projet et de leur contenu */ 
+
+  .imagesProjetsContainer {
+    max-width: 700px; 
+  }
+
+  .imagesProjets {
+    width: 300px; 
+    height: 200px;
+  }
+
+  .imagesProjets .art {
+    width: 300px;
+    height: 200px;
+  } 
+
+  .texteImagesProjets {
+    bottom: 0;
+    line-height: 20px; 
+  }
+
+  .texteImagesProjets p {
+    line-height: 30px; 
+  }
+
+  .iconeProjetsContainer {
+    bottom: 35px;
+  }
+
+  /* Suppression de l'effet hover inadapté pour appareil mobile */
+
+  .invisible {
+    opacity: 1;
+    transition: none; 
+  }
+
+  /* Ajustement formulaire */ 
+
+  footer {
+    display: flex; 
+  }
+
+  iframe {
+    height: 800px;
+  }
+
+  fieldset { 
+    text-align: center;
+    margin: 0 0; 
+    padding: 0 0 20px 0;
+    right: inherit; 
+    top: 260px; 
+    left: 0;
+    width: 100%; 
+    align-self: center;
+    height: 520px;  
+  }
+
+  fieldset h2 {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  input, textarea {
+    padding: 5px;
+  }
+
+  textarea {
+    padding-bottom: 100px; 
+  }
+
+  #envoyer {
+    width: 150px;
+  }
+
+}
+
+/* Style pour mobile en orientation paysage */ 
+
+@media screen and (max-width: 820px) {
+
+  /* Adaptation des tailles des polices d'écritures */
+
+  nav a {
+    font-size: 1em;  
+  }
+
+  #header h1 {
+    font-size: 1.6em;  
+  }
+
+  #header h2 {
+    font-size: 1.2em; 
+  }
+
+  section h2 {
+    font-size: 1.8em; 
+  }
+
+  .services p, .hautSection p {
+    font-size: 1em; 
+  }
+
+  #droiteService h3 {
+    font-size: 1.2em;
+  }
+
+  #boutonsProjets a {
+    font-size: 1em; 
+  }
+
+  .texteImagesProjets p {
+    font-size: 0.9em; 
+  }
+
+  footer p {
+    font-size: 1em; 
+  }
+
+  fieldset h1 {
+    font-size: 1.8em; 
+  }
+
+  fieldset em {
+    font-size: 1em;
+  }
+
+  fieldset p, fieldset input, fieldset textarea {
+    font-size: 1em;
+  }
+
+  footer #envoyer {
+    font-size: 1em;
+  }
+
+  /* Ajustement menu fixe */
+
+  .navigation {
+    max-width: 100%; 
+    height: 80px; 
+  }
+
+  #liensPage {
+    margin-right: 10px; 
+    margin-top: 5px;
+    width: 60%; 
+    height: 100%;  
+    text-align: center; 
+    align-self: center;
+  }
+
+  #liensPage span {
+    width: 100%;
+    height: 100%; 
+    padding-top: 22px;
+  }
+
+  #logo {
+    margin-left: 20px; 
+    width: 30%;
+    text-align: center;
+  }
+
+  #logo img {
+    width: 100%; 
+  }
+
+  /* Arrêt de l'animation slider et mise en place d'une image fixe*/
+
+  #header {
+    background-image: url("images/en-tête/enteteTelephone.jpg"); 
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-position: top;
+    text-align: center;
+    padding-bottom: 0; 
+    padding-top: 50%;  
+    width: 100%;   
+  }
+
+  #slider {
+    animation: none; 
+    overflow: hidden; 
+  }
+
+  #header span, #header figure {
+    display: none; 
+  }
+
+  /* Adaptation de l'entête */  
+
+  #header h1 {
+    width: 100%; 
+    text-shadow: black 1px 1px, black -1px 1px, 
+    black -1px -1px, black 1px -1px; 
+  }
+
+  #header h2 {
+    width: 100%; 
+    color: black; 
+    text-shadow: white 1px 1px, white -1px 1px, 
+    white -1px -1px, white 1px -1px;
+    top: 50%; 
+  }
+
+  #flecheGaucheContainer, #flecheDroiteContainer, #back, #next, 
+  #timeline, #fondTimeline {
+    display: none; 
+  }
+
+  #texteSlider {
+    left: inherit; 
+    top: 63%;
+    height: 140px;
+    width: 90%; 
+    text-align: center; 
+    padding: 0; 
+    margin: 0; 
+  }
+
+  #info {
+    display: none;
+  }
+
+  #header h2 {
+  top: 60%;
+ }
+
+  /* Adaptation des en-têtes des sections services et projets */
+
+  .hautsection p {
+    padding-left: 20px; 
+    padding-right: 20px; 
+  }
+
+  /* Adaptation services */
+
+  .sectionServicesContainer { 
+    flex-direction: column;
+  }
+
+  .texteService {
+    width: 100%;
+    margin-left: 20px;
+    padding-left: 5%;  
+  }
+
+  #illustration {
+    text-align: center; 
+    position: inherit;
+    width: auto;
+  }
+
+  #illustration img {
+    position: initial;
+    width: 50%;
+    padding-top: 0;
+  }
+
+  #droiteServices {
+    margin-left: 10px;
+    justify-content: space-around;
+  }
+
+  #droiteServices section {
+    padding-left: 10px; 
+  }
+
+  .iconeServicesContainer {
+    margin: 10px 0 0 0; 
+    padding: 0 0;
+  }
+
+  /* Ajustement de la section projet */ 
+
+  #boutonsProjets {
+    text-align: center; 
+  }
+
+  #boutonsProjets a {
+    padding-bottom: 10px;  
+  }
+
+  .texteImagesProjets {
+    bottom: inherit;
+    top: 108px;
+  }
+
+  .pure-button i {
+    bottom: -15px; 
+    left: 44%;
+  }
+
+  /* Ajustement des images du projet et de leur contenu */ 
+
+  .imagesProjetsContainer {
+    justify-content: space-around;
+  }
+
+  .imagesProjets {
+    width: 240px; 
+    height: 160px;
+  }
+
+  .imagesProjets .art {
+    width: 240px;
+    height: 160px;
+  } 
+
+  .texteImagesProjets {
+    bottom: 8px;
+  }
+
+  .iconeProjetsContainer {
+    bottom: 22px;   
+  }
+
+  /* Ajustement footer */ 
+
+  footer {
+    height: 1000px;
+  }
+
+  iframe {
+    height: 700px;
+  }
+
+  fieldset {
+    flex-direction: column;
+    top: 480px;
+    background-color: rgb(255, 255, 255, 1);
+  }
+
+}
+
+/* Style pour mobile en orientation portrait */
+
+@media screen and (max-width: 420px) {
+
+  /* Adaptation des tailles des polices d'écritures */
+
+  #header h1 {
+    font-size: 1.2em;  
+  }
+
+  #header h2 {
+    font-size: 1em; 
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+  section h2 {
+    font-size: 1.4em; 
+  }
+
+  .services p, .hautSection p {
+    font-size: 0.9em;
+  }
+
+  #droiteServices h3 {
+    font-size: 1.1em;
+  }
+
+  .texteImagesProjets p, .texteImagesProjets h2 {
+    font-size: 0.9em; 
+  }
+
+  #boutonsProjets a {
+    font-size: 0.9em;
+  }
+
+  fieldset em {
+    font-size: 1em;
+  }
+
+  /* Nouvelle image en-tête */ 
+
+  #header {
+    background-image: url("images/en-tête/enteteTelephone.jpg");
+  }
+
+  /* Ajustement menu fixe */
+
+  .navigation {
+    flex-direction: column;
+    justify-content: center; 
+    max-width: 100%;
+    height: 110px; 
+  }
+
+  #liensPage {
+    margin-right: 0; 
+    width: 100%;   
+  }
+
+  #liensPage span {
+    margin-top: 0;   
+    padding-top: 10px;   
+    height: auto; 
+  }
+
+  #logo {
+    margin-left: 0; 
+    width: 100%;
+  }
+
+  #logo img {
+    width: 60%;
+    padding-top: 5px;
+  }
+
+  /* Adaptation de l'entête */  
+
+  #header {
+    background-position: bottom;
+    padding-bottom: 0; 
+    padding-top: 0; 
+    height: 370px; 
+    width: 100%;  
+  }
+
+  #texteSlider {
+    top: 80%;
+    height: 150px;
+  }
+
+  /* Adaptation des en-têtes des sections services et projets */
+
+  .services {
+    padding-top: 70px; 
+  }
+
+  .hautSection p {
+    padding-left: 10px; 
+    padding-right: 10px; 
+  }
+
+    /* Ajustement de la section projet */ 
+
+  #boutonsProjets {
+    flex-direction: row; 
+    width: 80%;
+    align-items: inherit;
+  }
+
+  #boutonsProjets a {
+    max-width: 60px;
+  }
+
+  #boutonsProjets #creative, #boutonsProjets #corporate, 
+  #boutonsProjets #portfolio {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  .pure-button i {
+    left: 37.5%;
+    bottom: -15px; 
+  }
+
+  /* Adaptation services */
+
+  #illustration img {
+    width: 70%;
+  }
+
+  #droiteServices {
+    margin-left: 0;
+  }
+
+  #partieUX, #partieUI, #partieSEO {
+    padding-left: 0; 
+  }
+
+  /* Ajustement des images du projet */ 
+
+  .imagesProjetsContainer {
+    justify-content: center;
+  }
+
+  .imagesProjets i {
+    width: 100%;
+  }
+  
+}
+

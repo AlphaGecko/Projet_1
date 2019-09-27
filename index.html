@@ -1,0 +1,391 @@
+<!DOCTYPE html> 
+
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8" /> 
+		<title>Bienvenue chez Webagency</title>
+		<link rel="stylesheet" href="style.css" media="screen" />
+
+<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bibliothèque font awesome- -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+<!-- Police Roboto via google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" />
+	</head>
+
+	<body>		
+
+<!-- Menu fixe -->
+
+		<nav class="navigation">
+
+			<figure id="logo">
+				<a href="#header"><img src="images/en-tête/logo.png" alt="Logo de Web Agency" /></a>
+			</figure>
+
+			<div id="liensPage">
+				<span class="lienAccueil">
+					<a href="#header" title="Retour à l'accueil">Accueil</a>
+				</span>
+				<span class="lienServices">
+					<a href="#hautSection" title="Services">Services</a>
+				</span>
+				<span class="lienPortfolio">
+					<a  href="#hautSection2" title="Portfolio">Portfolio</a>
+				</span>	
+				<span class="lienContacts">
+					<a href="#footer" title="Contact">Contact</a>
+				</span>
+			</div>
+
+		</nav>
+
+<!-- En-tête -->
+
+		<header id="header">
+
+			<div id="slider">
+
+				<input type="radio" id="back" class="prochaineImage" name="clic" />
+				<input type="radio" id="next" class="prochaineImage" name="clic" />	
+
+				<div id="timeline"></div>
+				<div id="fondTimeline"></div>
+
+				<div id="flecheGaucheContainer">
+					<i class="fas fa-chevron-left" id="flecheGauche"></i>
+					<i class="fas fa-circle" id="cercleGauche"></i>
+				</div>
+
+				<div id="flecheDroiteContainer">
+					<i class="fas fa-chevron-right" id="flecheDroite"></i>
+					<i class="fas fa-circle" id="cercleDroit"></i>
+				</div>
+
+				<figure>
+					<img alt="Webagency, l'agence de tous vos projets !" src="images/en-tête/entete_1.jpg" />
+					<img alt="Webagency, l'agence de tous vos projets !" src="images/en-tête/entete_2.jpg" />
+					<img alt="Webagency, l'agence de tous vos projets !" src="images/en-tête/entete_1.jpg" />
+				</figure>
+
+			</div>
+
+			<div id="texteSlider">
+				<h1>
+					<strong>webagency</strong> : l'agence de tous <br /> vos projets !
+				</h1>
+				<h2>
+					Vous avez un projet web ? La WebAgency vous aide à le réaliser !
+				</h2>
+				<a href="#hautSection" id="info" class="pure-button" title="Plus d'infos">Plus d'infos</a>
+			</div>
+
+		</header>
+	
+<!-- Section services -->
+
+		<section class="services">
+
+			<header class="hautSection">
+
+				<h2>Nos Services</h2>
+
+				<div id="hautSection">
+
+				<div class="separationContainer">
+					<span class="separationCercle"></span>
+					<span class="separationLigne"></span>
+				</div>
+
+					<p>
+						Notre agence est là pour permettre à votre projet de réussir, que ce soit en partant ensemble de zéro ou pour un bon coup de boost numérique. Fort de nos 10 ans d’expérience sur le web, notre équipe de passionnés est sur tous les fronts, du design de votre site au marketing digital. Oui, vous serez accompagné de toute une équipe dont chaque membre est spécialiste dans son domaine afin que votre projet soit optimisé dans les moindres détails.
+					</p>
+				</div>
+
+			</header>
+
+			<div class="sectionServicesContainer">
+
+				<figure id="illustration">
+					<img src="images/section_1_services/main-feature.png" alt="Pour tous type d'écran" />
+				</figure>
+
+				<div id="droiteServices">
+
+					<article id="partieUX">
+						<div class="iconeServicesContainer">
+							<span class="ligneServices"></span>
+							<span class="cercleServices"></span>
+							<i class="fas fa-chart-line" id="UX"></i>
+						</div>
+						<div class="texteService">
+							<h3>UX design</h3>
+							<p>
+								Nous connaissons l’importance de l’expérience utilisateur et souhaitons vous le faire partager ! 
+								<br /> 
+								Nous ferons en sorte que vos visiteurs se sentent bien chez vous et qu’ils aient envie de rester sur votre site.
+							</p>
+						</div>
+					</article>
+
+					<article id="partieUI">
+						<div class="iconeServicesContainer">
+							<span class="ligneServices"></span>
+							<span class="cercleServices"></span>
+							<i class="fas fa-cubes" id="UI"></i>
+						</div>
+						<div class="texteService">
+							<h3>UI design</h3>
+							<p>
+								Nous créons des interfaces agréables et intuitives à vos utilisateurs. Nous vous aiderons à vous créer l’identité visuelle qui vous correspond.
+								<br />
+								Pas de site web génériques et froids, ici, tout est personnalisé pour que votre projet vous ressemble.
+							</p>
+						</div>
+					</article>
+
+					<article id="partieSEO">
+						<div class="iconeServicesContainer">
+							<span class="ligneServices"></span>
+							<span class="cercleServices"></span>
+							<i class="fas fa-chart-pie" id="SEO"></i>
+						</div>
+						<div class="texteService">
+							<h3>SEO</h3>
+							<p>
+								Avoir un site web bien pensé et au design moderne c’est très bien, encore faut-t-il que l’on vous trouve ! Nos experts en référencement vous aideront à toujours être en tête des recherches dans votre secteur d’activité
+							</p>
+						</div>	
+					</article>
+							
+				</div>
+			</div>
+		</section>
+
+<!-- Section projets -->
+
+		<section class="projets" id="fondProjets">
+
+			<header class="hautSection">
+				<h2>Nos Projets</h2>
+
+				<div id="hautSection2">
+
+					<div class="separationContainer">
+						<span class="separationCercle"></span>
+						<span class="separationLigne"></span>
+					</div>
+
+					<p>
+						Parce qu’un exemple vaudra toujours mieux qu’un long discours, faites vous une idée de nos compétences en parcourant nos dernières réalisations. 
+					</p>
+				</div>
+			</header>
+
+			<nav id="boutonsProjets">
+				<a class="pure-button" id="allWorks" title="All Works">All Works
+					<i class="fas fa-sort-down" id="visible"></i>
+				</a>
+				<a class="pure-button" id="creative" title="Creative" href="enCours.html">Creative
+					<i class="fas fa-sort-down"></i>
+				</a>
+				<a class="pure-button" id="corporate" title="Corporate" href="enCours.html">Corporate
+					<i class="fas fa-sort-down"></i>
+				</a>
+				<a class="pure-button" id="portfolio" title="Portflolio" href="enCours.html">Portfolio
+					<i class="fas fa-sort-down"></i>
+				</a>
+			</nav>
+
+			<figure class="imagesProjetsContainer">
+
+				<div class="imagesProjets">
+					<img class="art" src="images/section_2_projets/01.jpg" alt="projet" />
+					<div class="invisible">
+						<div class="fondGris"></div>
+						<div class="texteImagesProjets">
+							<h3>Creatif</h3>
+							<p>Design Groucho glasses.</p>
+						</div>
+						<div class="iconeProjetsContainer">
+							<span class="cercleProjets"></span>
+							<a href="images/section_2_projets/01.jpg" title="Cliquez pour zoomer en plein écran" target="_blank">
+								<i class="far fa-eye"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="imagesProjets">
+					<img class="art" src="images/section_2_projets/02.jpg" alt="projet">
+					<div class="invisible">
+						<div class="fondGris"></div>
+						<div class="texteImagesProjets">
+							<h3>Original</h3>
+							<p>Design gift rabbit.</p>
+						</div>
+						<div class="iconeProjetsContainer">
+							<span class="cercleProjets"></span>
+							<a href="images/section_2_projets/02.jpg" title="Cliquez pour zoomer en plein écran" target="_blank">
+								<i class="far fa-eye"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="imagesProjets">
+					<img class="art" src="images/section_2_projets/03.jpg" alt="projet">
+					<div class="invisible">
+						<div class="fondGris"></div>
+						<div class="texteImagesProjets">
+							<h3>Elégant</h3>
+							<p>Logo Pompadour.</p>
+						</div>
+						<div class="iconeProjetsContainer">
+							<span class="cercleProjets"></span>
+							<a href="images/section_2_projets/03.jpg" title="Cliquez pour zoomer en plein écran" target="_blank">
+								<i class="far fa-eye"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="imagesProjets">
+					<img class="art" src="images/section_2_projets/04.jpg" alt="projet">
+					<div class="invisible">
+						<div class="fondGris"></div>
+						<div class="texteImagesProjets">
+							<h3>Epuré</h3>
+							<p>Dropped timeline.</p>
+						</div>
+						<div class="iconeProjetsContainer">
+							<span class="cercleProjets"></span>
+							<a href="images/section_2_projets/04.jpg" title="Cliquez pour zoomer en plein écran" target="_blank">
+								<i class="far fa-eye"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="imagesProjets">
+					<img class="art" src="images/section_2_projets/05.jpg" alt="projet">
+					<div class="invisible">
+						<div class="fondGris"></div>
+						<div class="texteImagesProjets">
+							<h3>Sobre</h3>
+							<p>Two bags.</p>
+						</div>
+						<div class="iconeProjetsContainer">
+							<span class="cercleProjets"></span>
+							<a href="images/section_2_projets/05.jpg" title="Cliquez pour zoomer en plein écran" target="_blank">
+								<i class="far fa-eye"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="imagesProjets">
+					<img class="art" src="images/section_2_projets/06.jpg" alt="projet">
+					<div class="invisible">
+						<div class="fondGris"></div>
+						<div class="texteImagesProjets">
+							<h3>Esthétique</h3>
+							<p>Space city</p>
+						</div>
+						<div class="iconeProjetsContainer">
+							<span class="cercleProjets"></span>
+							<a href="images/section_2_projets/06.jpg" title="Cliquez pour zoomer en plein écran" target="_blank">
+								<i class="far fa-eye"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="imagesProjets">
+					<img class="art" src="images/section_2_projets/07.jpg" alt="projet">
+					<div class="invisible">
+						<div class="fondGris"></div>
+						<div class="texteImagesProjets">
+							<h3>Percutant</h3>
+							<p>Logo Apollo.</p>
+						</div>
+						<div class="iconeProjetsContainer">
+							<span class="cercleProjets"></span>
+							<a href="images/section_2_projets/07.jpg" title="Cliquez pour zoomer en plein écran" target="_blank">
+								<i class="far fa-eye"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="imagesProjets">
+					<img class="art" src="images/section_2_projets/08.jpg" alt="projet" />
+					<div class="invisible">
+						<div class="fondGris"></div>
+						<div class="texteImagesProjets">
+							<h3>Subtil</h3>
+							<p>Thème office.</p>
+						</div>
+						<div class="iconeProjetsContainer">
+							<span class="cercleProjets"></span>
+							<a href="images/section_2_projets/08.jpg" title="Cliquez pour zoomer en plein écran" target="_blank">
+								<i class="far fa-eye"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+			</figure>			
+		</section>	
+
+
+<!-- Section contacts -->
+
+		<footer id="footer">
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096807188!2d2.3476369158848414!3d48.873051779288936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1554322410787!5m2!1sfr!2sfr" allowfullscreen>	
+			</iframe>
+
+			<fieldset>
+
+				<h2>Contacts info</h2>
+				<p>
+					<em>WebAgency SAS</em><br />
+					25 rue d'Hauteville 75010 Paris<br />
+					tél : 01 02 03 04 05
+				</p>
+
+				<form method="post" action="traitement.php">
+
+					<div>
+						<span class="formulaire1">
+							<label for="nom">
+								<input type="text" name="nom" maxlength="30" placeholder="Nom" id="name"/>
+							</label>
+
+							<label for="email">
+								<input type="email" name="email" placeholder="E-mail" id="email" />
+							</label>
+
+							<label for="sujet">
+								<input type="text" name="sujet" maxlength="30" placeholder="Sujet" id="sujet" />
+							</label>
+
+							<textarea placeholder="Message"></textarea>
+						</span>
+					</div>
+
+					<label for="envoyer">
+						<input class="pure-button" id="envoyer" type="submit" name="envoyer" value="Envoyer" />
+					</label>
+					
+				</form>
+				
+			</fieldset>
+		</footer>
+	</body>
+</html>
